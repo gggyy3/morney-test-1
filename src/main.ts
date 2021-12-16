@@ -7,7 +7,6 @@ import Nav from '@/components/Nav.vue'
 
 Vue.config.productionTip = false
 
-// 全局引入
 Vue.component('Nav', Nav)
 
 new Vue({

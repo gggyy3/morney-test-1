@@ -17,6 +17,9 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 0,
     "@typescript-eslint/no-inferrable-types": "off", // 关闭类型判断
   },
+  global: {
+    "RecordItem": true
+  },
   overrides: [
     {
       files: [

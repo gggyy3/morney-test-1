@@ -1,4 +1,4 @@
-const localStorageKeyName = "recordListModel";
+const localStorageKeyName = "recordList";
 const recordListModel = {
   clone(data: RecordItem[] | RecordItem) {
     return JSON.parse(JSON.stringify(data))
@@ -9,7 +9,7 @@ const recordListModel = {
     ) as RecordItem[];
   },
   save(data: RecordItem[]) {
-    window.localStorage.setItem("localStorageKeyName", JSON.stringify(data));
+    window.localStorage.setItem(localStorageKeyName, JSON.stringify(data));
   }
 };
 

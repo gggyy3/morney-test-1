@@ -22,14 +22,15 @@ const tagListModel: TagListModel = {
     const names = this.data.map(item => item.name)
     if (names.indexOf(name) >= 0) {
         return 'duplicated'
-    }
+        }
+
     this.data.push({id: name, name:name});
     this.save();
     return 'success';
   },
   save() {
     window.localStorage.setItem(
-      "localStorageKeyName",
+      localStorageKeyName,
       JSON.stringify(this.data)
     );
   },

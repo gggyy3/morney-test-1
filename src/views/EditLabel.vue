@@ -5,7 +5,7 @@
       <span class="title">编辑标签</span>
       <span class="rightIcon"></span>
     </div>
-    <div class="from-warpper">
+    <div class="from-wrapper">
       <FormItem
         :value="currentTag.name"
         @update:value="update"
@@ -82,7 +82,7 @@ export default class EditLabel extends Vue {
     height: 24px;
   }
 }
-.from-warpper {
+.from-wrapper {
   background: white;
   margin-top: 8px;
 }

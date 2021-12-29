@@ -12,7 +12,7 @@ const store = new Vuex.Store({
     createRecordError: null,
     createTagError: null,
     tagList: [],
-    currentTag: undefined,
+    currentTag: undefined
   } as RootState,
   mutations: {
     setCurrentTag(state, id: string) {
@@ -58,7 +58,6 @@ const store = new Vuex.Store({
       record2.createdAt = new Date().toISOString();
       state.recordList.push(record2);
       store.commit("saveRecords");
-      window.alert('已保存')
     },
     saveRecords(state) {
       window.localStorage.setItem(
